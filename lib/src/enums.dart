@@ -1,0 +1,4 @@
+enum HoverAnim {
+  Underline,
+  UnderlineText,
+}
