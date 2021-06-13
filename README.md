@@ -7,14 +7,32 @@ In your flutter project add the dependency:
 ```yml
 dependencies:
   ...
-  sqflite:
+  simple_ink:
 ```
 ## Usage example
 
 
 
-Import `sqflite.dart`
+Import `simple_ink`
 
 ```dart
-import 'package:sqflite/sqflite.dart';
+import 'package:simple_ink/simple_ink.dart';
+```
+
+### Use Widget
+
+```dart
+SimpleInk(
+  hoverInkAnim: HoverInkAnim.underlineText(
+    text: 'Login', 
+    textStyle: TextStyle(
+      fontWeight: FontWeight.bold,
+      fontSize: 18,
+    ),
+  ),
+  inkType: InkType.Well,
+  onTap: () {
+    print('Tap');
+  },
+),
 ```
